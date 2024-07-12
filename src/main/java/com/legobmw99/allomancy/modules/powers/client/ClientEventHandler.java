@@ -404,8 +404,8 @@ public class ClientEventHandler {
                     motionX = ((posX - (event.getSound().getX() + .5)) * -0.7) / magnitude;
                     motionY = ((posY - (event.getSound().getY() + .2)) * -0.7) / magnitude;
                     motionZ = ((posZ - (event.getSound().getZ() + .5)) * -0.7) / magnitude;
-                    this.mc.particleEngine.createParticle(new SoundParticleData(sound.getSource()), posX + (Math.sin(Math.toRadians(player.getYHeadRot())) * -.7d), posY + .2,
-                                                          posZ + (Math.cos(Math.toRadians(player.getYHeadRot())) * .7d), motionX, motionY, motionZ);
+                    /*this.mc.particleEngine.createParticle(new SoundParticleData(sound.getSource()), posX + (Math.sin(Math.toRadians(player.getYHeadRot())) * -.7d), posY + .2,
+                                                          posZ + (Math.cos(Math.toRadians(player.getYHeadRot())) * .7d), motionX, motionY, motionZ);*/
                 }
             }
         });
